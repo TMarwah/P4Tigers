@@ -13,6 +13,14 @@ Charlie Zhu, Eshaan Parlikar, Rohan Nallapati, Tanmay Marwah
 Our project is going to be a website that sells merchandise to the user, much like Amazon, eBay, or any other online
 shop.
 
+# What will the website feature?
+- Login system that allows user to create accounts
+- Clothing options, such as sweaters and shoes that the user can purchase
+- Options for users with accounts to set default addresses and card information
+
+# Assignments
+To be decided as of December 11th, 2020.
+
 # Update Log
 ## Week 1:
 Started working on the project plan, main idea is to create a shop/merchandise website
