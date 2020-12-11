@@ -12,3 +12,5 @@ Charlie Zhu, Eshaan Parlikar, Rohan Nallapati, Tanmay Marwah
 # What is our project?
 Our project is going to be a website that sells merchandise to the user, much like Amazon, eBay, or any other online
 shop.
+
+# Update Log
