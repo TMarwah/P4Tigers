@@ -14,7 +14,7 @@ Our project is going to be a website that sells merchandise to the user, much li
 shop.
 
 # Update Log
-# Week 1:
+## Week 1:
 Started working on the project plan, main idea is to create a shop/merchandise website
-# Week 0:
+## Week 0:
 Formed our scrum team and created an introduction video
