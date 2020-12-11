@@ -17,12 +17,15 @@ shop.
 - Login system that allows user to create accounts
 - Clothing options, such as sweaters and shoes that the user can purchase
 - Options for users with accounts to set default addresses and card information
-
+- Having a database that tracks what certain users buy
+- Having a Checkout Feature
+- Adding items to a cart and having the program save those items in the cart
+- Navbar with Bootstrap that will contain different items that can be bought
 # Assignments
 To be decided as of December 11th, 2020.
 
 # Update Log
 ## Week 1:
-Started working on the project plan, main idea is to create a shop/merchandise website
+We began to truly brainstorm on what our project would become. After some time, we decided on the idea to make a merchandising website and started to get to work on the project plan document.
 ## Week 0:
-Formed our scrum team and created an introduction video
+We formed our scrum team and created an introduction video. We also created this Readme format.
