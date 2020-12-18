@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/P4Tigers.iml" filepath="$PROJECT_DIR$/.idea/P4Tigers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/env/env.iml" filepath="$PROJECT_DIR$/env/env.iml" />
+      <module fileurl="file://$PROJECT_DIR$/env/templates.iml" filepath="$PROJECT_DIR$/env/templates.iml" />
     </modules>
   </component>
 </project>
