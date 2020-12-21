@@ -22,7 +22,7 @@ shop.
 - Adding items to a cart and having the program save those items in the cart
 - Navbar with Bootstrap that will contain different items that can be bought
 # Assignments
-To be decided as of December 11th, 2020.
+To be decided as of December 18th, 2020.
 
 # Update Log
 ## Week 2:
