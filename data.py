@@ -1,3 +1,35 @@
+def playdata():
+    greeting = "Hello,"
+    name = "Charlie"
+    dob = "February 2nd"
+    job = "None"
+    story = "I am a junior at Del Norte High School. I was born in San Diego" \
+            " and am currently 16 years old. I have an older sister who is in college. " \
+            "Some things I like to do in my free time are play video games and run."
+    info = {"greeting": greeting, "name": name, "dob": dob, "job": job, "story": story}
+    return info
+
+
+def playdata2():
+    greeting = "Hey"
+    name = "Rohan"
+    dob = "January 1st"
+    job = "None"
+    story = "I am a 16 year old Junior at Del Norte High School and I was born in Austin, Texas. " \
+            "I have one younger brother in the 9th grade who also goes to DNHS. Things I enjoy doing " \
+            "in my free time are eating, reading, and playing video games."
+    info = {"greeting": greeting, "name": name, "dob": dob, "job": job, "story": story}
+    return info
+
+
+
+def playlist():
+    return [playdata(), playdata2()]
+
+#  Data "setup" for Projects
+#  next step would be to extract project data from a database
+
+
 def setup():
     #  Person Data
     title = "Charlie/Rohan 5 Hour"
