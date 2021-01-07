@@ -14,7 +14,13 @@ app = Flask(__name__)
 def home_route():
     return render_template("home.html")
 
+@app.route('/index')
+def index_route():
+    return render_template("index.html")
 
+@app.route('/testimonial')
+def testimonial_route():
+    return render_template("testimonial.html")
 # connects /hello path of server to render hello.html
 
 
