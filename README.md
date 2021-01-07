@@ -22,9 +22,19 @@ shop.
 - Adding items to a cart and having the program save those items in the cart
 - Navbar with Bootstrap that will contain different items that can be bought
 # Assignments
-To be decided as of December 11th, 2020.
+To be decided as of December 18th, 2020.
 
 # Update Log
+## Week 2:
+Began working on components that will be used in the project through the 5 hour coding challenge assigned.
+
+-Eshaan: began working with SQLite to create lists to save information for accounts and logins
+
+-Tanmay: programmed the homepage file to get a start on our website design
+
+-Charlie: studied SQLAlchemy and started to figure out how to apply it to our website
+
+-Rohan: started to look into APIs and how to apply them to our website
 ## Week 1:
 We began to truly brainstorm on what our project would become. After some time, we decided on the idea to make a merchandising website and started to get to work on the project plan document.
 ## Week 0:
