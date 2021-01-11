@@ -22,8 +22,16 @@ shop.
 - Adding items to a cart and having the program save those items in the cart
 - Navbar with Bootstrap that will contain different items that can be bought
 
-# Web Tickets
-A. 
+# Completed Web Tickets
+-successfully used HTML code to program the websites homepage, along with the index and resolution tabs; currently 
+ready to deploy on Raspberry Pi in Scrum Board
+ -folder containing HTML: https://github.com/TMarwah/P4Tigers/tree/main/templates
+
+-successfully created a navbar using Bootstrap that contains different tabs of possible items; currently ready to deploy
+on Raspberry Pi in Scrum Board
+ -file containing Bootstrap: https://github.com/TMarwah/P4Tigers/blob/main/static/css/bootstrap.min.css
+
+  
 
 
 # Assignments
