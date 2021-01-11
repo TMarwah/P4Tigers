@@ -21,10 +21,30 @@ shop.
 - Having a Checkout Feature
 - Adding items to a cart and having the program save those items in the cart
 - Navbar with Bootstrap that will contain different items that can be bought
+
+# Web Tickets
+A. 
+
+
 # Assignments
-To be decided as of December 18th, 2020.
+Tanmay: integrate HTML template, link API, have a login feature
+
+Charlie: add images (pngs), checkout feature, integrate HTML template
+
+Rohan: front end, make website look nice plus about us page
+
+Eshaan: create database to track users, create a program that adds and saves items in a virtual cart
 
 # Update Log
+## Week 4:
+
+## Week 3:
+-continued working with 5 hour challenges
+
+-Charlie and Rohan implemented 5 hour challenge onto website
+
+-Presented 5 hour projects on Friday
+
 ## Week 2:
 Began working on components that will be used in the project through the 5 hour coding challenge assigned.
 
