@@ -15,7 +15,7 @@ shop.
 
 # What will the website feature?
 - Login system that allows user to create accounts
-- Clothing options, such as sweaters and shoes that the user can purchase
+- Clothing options, such as sweaters and shoes that the user can purchase 
 - Options for users with accounts to set default addresses and card information
 - Having a database that tracks what certain users buy
 - Having a Checkout Feature
@@ -29,7 +29,7 @@ ready to deploy on Raspberry Pi in Scrum Board
 
 -successfully created a navbar using Bootstrap that contains different tabs of possible items; currently ready to deploy
 on Raspberry Pi in Scrum Board
- -file containing Bootstrap: https://github.com/TMarwah/P4Tigers/blob/main/static/css/bootstrap.min.css
+ -file containing Bootstrap: https://github.com/TMarwah/P4Tigers/blob/main/templates/base.html
 
 -runtime: http://127.0.0.1:3000/
 
