@@ -29,7 +29,7 @@ A.
 # Assignments
 Tanmay: integrate HTML template, link API, have a login feature
 
-Charlie: add images (pngs), checkout feature, integrate HTML template
+Charlie: add images (pngs), checkout feature, integrate HTML template, set up nav bar with Bootstrap
 
 Rohan: front end, make website look nice plus about us page
 
