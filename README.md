@@ -15,7 +15,7 @@ shop.
 
 # What will the website feature?
 - Login system that allows user to create accounts
-- Clothing options, such as sweaters and shoes that the user can purchase 
+- Clothing options, such as sweaters and shoes that the user can purchase https://github.com/TMarwah/P4Tigers/blob/main/templates/index.html
 - Options for users with accounts to set default addresses and card information
 - Having a database that tracks what certain users buy
 - Having a Checkout Feature
