@@ -1,3 +1,4 @@
+
 import data
 # https://flask.palletsprojects.com/en/1.1.x/api/
 from flask import Flask, render_template
@@ -28,7 +29,7 @@ def testimonial_route():
 def hello_route():
     return render_template("5hr.html", projects=data.setup())
 
-
+#animation path
 @app.route('/anim/')
 def animation_route():
     return render_template("animation.html", projects=data.setup())
