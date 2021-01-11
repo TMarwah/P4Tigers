@@ -33,9 +33,6 @@ on Raspberry Pi in Scrum Board
 
 -runtime: http://127.0.0.1:3000/
 
-  
-
-
 # Assignments
 Tanmay: integrate HTML template, link API, have a login feature
 
