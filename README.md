@@ -15,16 +15,43 @@ shop.
 
 # What will the website feature?
 - Login system that allows user to create accounts
-- Clothing options, such as sweaters and shoes that the user can purchase
+- Clothing options, such as sweaters and shoes that the user can purchase https://github.com/TMarwah/P4Tigers/blob/main/templates/index.html
 - Options for users with accounts to set default addresses and card information
 - Having a database that tracks what certain users buy
 - Having a Checkout Feature
 - Adding items to a cart and having the program save those items in the cart
-- Navbar with Bootstrap that will contain different items that can be bought
+- Navbar with Bootstrap that will contain different tabs for the site https://github.com/TMarwah/P4Tigers/blob/main/templates/base.html
+
+# Completed Web Tickets
+-successfully used HTML code to program the websites homepage, along with the index and resolution tabs; currently 
+ready to deploy on Raspberry Pi in Scrum Board
+ -folder containing HTML: https://github.com/TMarwah/P4Tigers/tree/main/templates
+
+-successfully created a navbar using Bootstrap that contains different tabs of possible items; currently ready to deploy
+on Raspberry Pi in Scrum Board
+ -file containing Bootstrap: https://github.com/TMarwah/P4Tigers/blob/main/templates/base.html
+
+-runtime: http://127.0.0.1:3000/
+
 # Assignments
-To be decided as of December 18th, 2020.
+Tanmay: integrate HTML template, link API, have a login feature
+
+Charlie: add images (pngs), checkout feature, integrate HTML template, set up nav bar with Bootstrap
+
+Rohan: front end, make website look nice plus about us page
+
+Eshaan: create database to track users, create a program that adds and saves items in a virtual cart
 
 # Update Log
+## Week 4:
+
+## Week 3:
+-continued working with 5 hour challenges
+
+-Charlie and Rohan implemented 5 hour challenge onto website
+
+-Presented 5 hour projects on Friday
+
 ## Week 2:
 Began working on components that will be used in the project through the 5 hour coding challenge assigned.
 
