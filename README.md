@@ -20,7 +20,7 @@ shop.
 - Having a database that tracks what certain users buy
 - Having a Checkout Feature
 - Adding items to a cart and having the program save those items in the cart
-- Navbar with Bootstrap that will contain different items that can be bought
+- Navbar with Bootstrap that will contain different tabs for the site https://github.com/TMarwah/P4Tigers/blob/main/templates/base.html
 
 # Completed Web Tickets
 -successfully used HTML code to program the websites homepage, along with the index and resolution tabs; currently 
