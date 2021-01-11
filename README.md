@@ -31,6 +31,8 @@ ready to deploy on Raspberry Pi in Scrum Board
 on Raspberry Pi in Scrum Board
  -file containing Bootstrap: https://github.com/TMarwah/P4Tigers/blob/main/static/css/bootstrap.min.css
 
+-runtime: http://127.0.0.1:3000/
+
   
 
 
