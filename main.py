@@ -25,9 +25,9 @@ def testimonial_route():
 # connects /hello path of server to render hello.html
 
 
-@app.route('/proj/')
+@app.route('/login/')
 def hello_route():
-    return render_template("5hr.html", projects=data.setup())
+    return render_template("login.html", projects=data.setup())
 
 #animation path
 @app.route('/anim/')
