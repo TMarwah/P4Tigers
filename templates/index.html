@@ -1,5 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "base.html" %}
+{% block header %}
+
    <head>
       <!-- basic -->
       <meta charset="utf-8">
@@ -33,46 +34,13 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
    </head>
    <!-- body -->
-   <body class="main-layout">
+   <div class="main-layout" style="background-color:white;">
       <!-- loader  -->
       <div class="loader_bg">
-         <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+         <div class="loader"><img src="/static/images/loading.gif" alt="#" /></div>
       </div>
       <!-- end loader -->
-      <!-- header -->
-      <header class="section">
-         <!-- header inner -->
-         <div class="header">
-            <div class="container">
-               <div class="row">
-                  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
-                     <div class="full">
-                        <div class="center-desk">
-                           <div class="logo"> <a href="index.html"><img src="images/logo.png" alt="#"></a> </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
-                     <div class="menu-area">
-                        <div class="limit-box">
-                           <nav class="main-menu">
-                              <ul class="menu-area-main">
-                                 <li> <a href="index.html">Home</a> </li>
-                                 <li> <a href="login.html">Login</a> </li>
-                                 <li><a href="shop.html">Shop</a></li>
-                                 <li><a href="cart.html">Cart</a></li>
-                                 <li class="last"><a href="#"><img src="images/search_icon.png" alt="icon"/></a></li>
-                              </ul>
-                           </nav>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <!-- end header inner -->
-      </header>
-      <!-- end header -->
+
       <section >
          <div id="main_slider" class="section carousel slide banner-main" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -94,7 +62,7 @@
                         </div>
                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                            <div class="img-box">
-                              <figure><img src="images/boksing-gloves.png" alt="img"/></figure>
+                              <figure><img src="/static/images/boksing-gloves.png" alt="img"/></figure>
                            </div>
                         </div>
                      </div>
@@ -113,7 +81,7 @@
                         </div>
                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                            <div class="img-box ">
-                              <figure><img src="images/boksing-gloves.png" alt="img"/></figure>
+                              <figure><img src="/static/images/boksing-gloves.png" alt="img"/></figure>
                            </div>
                         </div>
                      </div>
@@ -132,7 +100,7 @@
                         </div>
                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                            <div class="img-box">
-                              <figure><img src="images/boksing-gloves.png" alt="img"/></figure>
+                              <figure><img src="/static/images/boksing-gloves.png" alt="img"/></figure>
                            </div>
                         </div>
                      </div>
@@ -164,21 +132,21 @@
             <div class="row">
                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
                   <div class="sport_product">
-                     <figure><img src="images/basketball.png" alt="img"/></figure>
+                     <figure><img src="/static/images/basketball.png" alt="img"/></figure>
                     <h3> $<strong class="price_text">50</strong></h3>
                      <h4>basket ball</h4>
                   </div>
                </div>
                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 ">
                   <div class="sport_product">
-                     <figure><img src="images/t-shirt.png" alt="img"/ ></figure>
+                     <figure><img src="/static/images/t-shirt.png" alt="img"/ ></figure>
                     <h3> $<strong class="price_text">50</strong></h3>
                      <h4> T-Shirt</h4>
                   </div>
                </div>
                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 ">
                   <div class="sport_product">
-                     <figure><img src="images/game.png" alt="img"/></figure>
+                     <figure><img src="/static/images/game.png" alt="img"/></figure>
                      <h3> $<strong class="price_text">50</strong></h3>
                      <h4>Game</h4>
                   </div>
@@ -189,21 +157,21 @@
          
                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
                   <div class="sport_product">
-                     <figure><img src="images/basketball.png" alt="img"/"></figure>
+                     <figure><img src="/static/images/basketball.png" alt="img"/"></figure>
                    <h3> $<strong class="price_text">50</strong></h3>
                      <h4>basket ball</h4>
                   </div>
                </div>
                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 ">
                   <div class="sport_product">
-                     <figure><img src="images/t-shirt.png" alt="img"/"></figure>
+                     <figure><img src="/static/images/t-shirt.png" alt="img"/"></figure>
                     <h3> $<strong class="price_text">50</strong></h3>
                      <h4>T-Shirt</h4>
                   </div>
                </div>
                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 ">
                   <div class="sport_product">
-                     <figure><img src="images/game.png" alt="img"/"></figure>
+                     <figure><img src="/static/images/game.png" alt="img"/"></figure>
                     <h3> $<strong class="price_text">50</strong></h3>
                      <h4>Game</h4>
                   </div>
@@ -221,13 +189,6 @@
 
 
 
-      <!-- end Contact Us-->
-      <!-- footer start-->
-      <div id="plant" class="footer layout_padding">
-         <div class="container">
-            <p>© 2019 All Rights Reserved. Design by<a href="https://html.design/"> Free Html Templates</a></p>
-         </div>
-      </div>
 
       <!-- Javascript files-->
       <script src="js/jquery.min.js"></script>
@@ -258,5 +219,5 @@
          });
          
       </script> 
-   </body>
-</html>
+   </div>
+   {% endblock %}

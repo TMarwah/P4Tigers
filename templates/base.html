@@ -1,14 +1,5 @@
 <!doctype html>
 
-<!--
-  Setting up variable used in template
-  "projects" is python object
--->
-{% set source = projects.get_source() %} <!-- source of project dict -->
-{% set projects = projects.get_projects() %} <!-- projects data -->
-{% set name = source["name"] %}
-{% set title = source["title"] %}
-
 
 <html>
 <head>
@@ -67,7 +58,7 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
             <a class="nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-link" href="/playlist">About Us</a>
+            <a class="nav-link" href="/testimonial">Testimonial</a>
             <a class="nav-link" href="/proj">Project Plan</a>
             <a class="nav-link" href="/anim">Animation</a>
         </div>
@@ -76,54 +67,14 @@
 
 
 <div>
-    <!-- Names: haven't decided if we like these in the design yet
-    <div class="row justify-content-end" style="padding-top: 2%; padding-bottom: 2%; padding: 2%;">
-      <div class="col-2" style="text-align: right; color: white">
-        {% block info %}
-         notice jinja style variables used in href's
-        <h5>{{name}}</h5>
-      {% endblock %}
-    </div>
-  </div> -->
 
     {% block header %}
     {% endblock %}
 
-    <div class="product" style="margin-top: 2%;">
-        {% block style %}
-        {% endblock %}
-
-        {% block title %}
-        {% endblock %}
-
-    </div>
-</div>
-<!--
-<div class="row" style="padding-left: 10%;">
-  <div class="col-4">
-    {% block link1 %}
-    {% endblock %}
-  </div>
-
-  <div class="col-4">
-    {% block link2 %}
-    {% endblock %}
-  </div>
-
-  <div class="col-4">
-    {% block link3 %}
-    {% endblock %}
-  </div>
 
 </div>
--->
 
-{% block projectplan %}
-{% endblock %}
-{% block repl %}
-{% endblock %}
-{% block journal %}
-{% endblock %}
+
 </body>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

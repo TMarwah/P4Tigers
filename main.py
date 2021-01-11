@@ -20,7 +20,7 @@ def index_route():
 
 @app.route('/testimonial')
 def testimonial_route():
-    return render_template("testimonial.html")
+    return render_template("testmonial.html")
 # connects /hello path of server to render hello.html
 
 
