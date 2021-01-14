@@ -31,7 +31,7 @@ ready to deploy on Raspberry Pi in Scrum Board
 on Raspberry Pi in Scrum Board
  -file containing Bootstrap: https://github.com/TMarwah/P4Tigers/blob/main/templates/base.html
 
--runtime: http://127.0.0.1:3000/
+-runtime: http://104.63.255.27/
 
 # Assignments
 Tanmay: integrate HTML template, link API, have a login feature
