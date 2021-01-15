@@ -50,6 +50,8 @@ Eshaan: create database to track users, create a program that adds and saves ite
 
 -continued working on figuring out login system with database
 
+-developed website's aesthetic to make it visually pleasing
+
 ## Week 3:
 -continued working with 5 hour challenges
 
