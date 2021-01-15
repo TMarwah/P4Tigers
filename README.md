@@ -24,7 +24,7 @@ shop.
 
 # Completed Web Tickets
 -successfully used HTML code to program the websites homepage, along with the index and resolution tabs; currently 
-ready to deploy on Raspberry Pi in Scrum Board
+ready to deploy on Raspberry Pi in Scrum Board. Next step is to start creating items for purchase and add cart management features.
  -folder containing HTML: https://github.com/TMarwah/P4Tigers/tree/main/templates
 
 -successfully created a navbar using Bootstrap that contains different tabs of possible items; currently ready to deploy
@@ -49,6 +49,8 @@ Eshaan: create database to track users, create a program that adds and saves ite
 -did the "About Us" section for our website
 
 -continued working on figuring out login system with database
+
+-developed website's aesthetic to make it visually pleasing
 
 ## Week 3:
 -continued working with 5 hour challenges
