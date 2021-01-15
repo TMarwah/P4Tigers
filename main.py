@@ -1,5 +1,5 @@
 
-import data
+import info
 # https://flask.palletsprojects.com/en/1.1.x/api/
 from flask import Flask, render_template
 
@@ -27,12 +27,12 @@ def testimonial_route():
 
 @app.route('/login/')
 def hello_route():
-    return render_template("login.html", projects=data.setup())
+    return render_template("login.html", projects=info.setup())
 
 #animation path
 @app.route('/anim/')
 def animation_route():
-    return render_template("animation.html", projects=data.setup())
+    return render_template("animation.html", projects=info.setup())
 
 
 # connects /flask path of server to render flask.html
@@ -40,7 +40,7 @@ def animation_route():
 
 @app.route('/playlist/')
 def playlist_route():
-    return render_template("playlist.html", datalist=data.playlist(), projects=data.setup())
+    return render_template("playlist.html", datalist=info.playlist(), projects=info.setup())
 
 # Create a sign up page
 

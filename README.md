@@ -44,6 +44,11 @@ Eshaan: create database to track users, create a program that adds and saves ite
 
 # Update Log
 ## Week 4:
+-deployed the website on the Raspberry Pi
+
+-did the "About Us" section for our website
+
+-continued working on figuring out login system with database
 
 ## Week 3:
 -continued working with 5 hour challenges
