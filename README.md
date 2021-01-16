@@ -25,14 +25,27 @@ shop.
 # Completed Web Tickets
 -successfully used HTML code to program the shop homepage, along with the index and resolution tabs; currently 
 ready to deploy on Raspberry Pi in Scrum Board. Next step is to start creating items for purchase and add cart management features.
- -folder containing HTML: https://github.com/TMarwah/P4Tigers/tree/main/templates
+- folder containing HTML: https://github.com/TMarwah/P4Tigers/tree/main/templates
+- Integrated shop site: https://github.com/TMarwah/P4Tigers/blob/main/templates/index.html
+- Can be evaluated via runtime by using the home navbar to visit the shop homepage and seeing the successfully integrated HTML.
 
--successfully created a navbar using Bootstrap that contains different tabs of possible items; currently ready to deploy
+-successfully integrated the home page as well as adding a navbar using Bootstrap that contains different tabs of possible items; currently ready to deploy
 on Raspberry Pi in Scrum Board
- -file containing Bootstrap: https://github.com/TMarwah/P4Tigers/blob/main/templates/base.html
+- file containing Bootstrap: https://github.com/TMarwah/P4Tigers/blob/main/templates/base.html
+
+-successfully made a completed about us page with visuals and bootstrap buttons to scroll through the team, as well as a carousel on the bottom in which individual slides can be picked by the viewer; currently ready to deploy.
+- file containing bootstrap and visual code: https://github.com/TMarwah/P4Tigers/blob/main/templates/testmonial.html
 
 -runtime: http://104.63.255.27/
 
+# 1/15 Individual Support
+Charlie:
+
+Tanmay:
+
+Rohan:
+
+Eshaan:
 # Assignments
 Tanmay: integrate HTML template, link API, have a login feature
 
