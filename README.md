@@ -32,7 +32,7 @@ ready to deploy on Raspberry Pi in Scrum Board. Next step is to start creating i
 on Raspberry Pi in Scrum Board
 - file containing Bootstrap: https://github.com/TMarwah/P4Tigers/blob/main/templates/base.html
 
--successfully made a completed about us page with visuals and bootstrap buttons to scroll through the team, as well as a carousel on the button in which individual slides can be picked by the viewer; currently ready to deploy.
+-successfully made a completed about us page with visuals and bootstrap buttons to scroll through the team, as well as a carousel on the bottom in which individual slides can be picked by the viewer; currently ready to deploy.
 - file containing bootstrap and visual code: https://github.com/TMarwah/P4Tigers/blob/main/templates/testmonial.html
 
 -runtime: http://104.63.255.27/
