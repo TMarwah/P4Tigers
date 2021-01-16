@@ -41,17 +41,17 @@ on Raspberry Pi in Scrum Board
 -runtime: http://104.63.255.27/
 
 # 1/15 Individual Support
-Charlie:
-Scrum Master Evaluation: Charlie did a lot of work on the about us page and worked with Tanmay on integratign the HTML Template(20/20)
+Charlie: This week, my main focus was making an about us page that utilized bootstrap. I also helped with integrating the HTML template. My evidence can be seen on January 15th in the commit history.
+- Scrum Master Evaluation: Charlie did a lot of work on the about us page and worked with Tanmay on integratign the HTML Template(20/20)
 
-Tanmay:
-Scrum Master Evaluation: Tanmay was the main factor in integrating the html page and did lots of work on images and animations(20/20)
+Tanmay: Throughout the week, I was working on integrating the HTML template for our shop site. I also helped with resizing images and adding some animations. Evidence can be seen on January 14th as well as some of this work being done previously on January 7th.
+- Scrum Master Evaluation: Tanmay was the main factor in integrating the html page and did lots of work on images and animations(20/20)
 
 Rohan: 
-Scrum Master Evaluation: Rohan helped to integrate the images and gifs and was mostly focused on front end such as the base login page(18/20)
+- Scrum Master Evaluation: Rohan helped to integrate the images and gifs and was mostly focused on front end such as the base login page(18/20)
 
-Eshaan: I deployed the website on the Raspberry Pi and assisted Charlie with help on the HTML 
-Scrum Master Evaluation: Eshaan deployed the website onto the Raspberry Pi and assisted Charlie with the HTML(18/20)
+Eshaan: I deployed the website on the Raspberry Pi and assisted Charlie with help on the HTML. 
+- Scrum Master Evaluation: Eshaan deployed the website onto the Raspberry Pi and assisted Charlie with the HTML(18/20)
 
 *Scrum Master grading in accordance with their code commits in the history on github repo
 # Assignments
