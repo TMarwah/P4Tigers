@@ -23,15 +23,13 @@ shop.
 - Navbar with Bootstrap that will contain different tabs for the site https://github.com/TMarwah/P4Tigers/blob/main/templates/base.html
 
 # Completed Web Tickets
--successfully used HTML code to program the websites homepage, along with the index and resolution tabs; currently 
-deploying on Raspberry Pi in Scrum Board. Next step is to start creating items for purchase and add cart management features.
+-successfully used HTML code to program the shop homepage, along with the index and resolution tabs; currently 
+ready to deploy on Raspberry Pi in Scrum Board. Next step is to start creating items for purchase and add cart management features.
  -folder containing HTML: https://github.com/TMarwah/P4Tigers/tree/main/templates
 
--successfully created a navbar using Bootstrap that contains different tabs of possible items; deployed  on Raspberry Pi 
-in Scrum Board
+-successfully created a navbar using Bootstrap that contains different tabs of possible items; currently ready to deploy
+on Raspberry Pi in Scrum Board
  -file containing Bootstrap: https://github.com/TMarwah/P4Tigers/blob/main/templates/base.html
-
--
 
 -runtime: http://104.63.255.27/
 
