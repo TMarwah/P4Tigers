@@ -32,9 +32,11 @@ ready to deploy on Raspberry Pi in Scrum Board. Next step is to start creating i
 -successfully integrated the home page as well as adding a navbar using Bootstrap that contains different tabs of possible items; currently ready to deploy
 on Raspberry Pi in Scrum Board
 - file containing Bootstrap: https://github.com/TMarwah/P4Tigers/blob/main/templates/base.html
+- Can be evaluated via runtime by running the project and checking if the navbar does lead to the different tabs on our website.
 
 -successfully made a completed about us page with visuals and bootstrap buttons to scroll through the team, as well as a carousel on the bottom in which individual slides can be picked by the viewer; currently ready to deploy.
 - file containing bootstrap and visual code: https://github.com/TMarwah/P4Tigers/blob/main/templates/testmonial.html
+- Can be evaluated via runtime by checking if the bootstrap carousel and buttons successfully scroll through the different profiles in the about us page.
 
 -runtime: http://104.63.255.27/
 
