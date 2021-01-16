@@ -47,7 +47,7 @@ Charlie: This week, my main focus was making an about us page that utilized boot
 Tanmay: Throughout the week, I was working on integrating the HTML template for our shop site. I also helped with resizing images and adding some animations. Evidence can be seen on January 14th as well as some of this work being done previously on January 7th.
 - Scrum Master Evaluation: Tanmay was the main factor in integrating the html page and did lots of work on images and animations(20/20)
 
-Rohan: 
+Rohan: I mostly worked on helping with the images and gifs and I recently added the login page which you can find as the LOGIN ADDITIONS in the commit history for January 16th. The images and gifs are part of Tanmay's commits on the 14th and such. 
 - Scrum Master Evaluation: Rohan helped to integrate the images and gifs and was mostly focused on front end such as the base login page(18/20)
 
 Eshaan: I deployed the website on the Raspberry Pi and assisted Charlie with help on the HTML. 
