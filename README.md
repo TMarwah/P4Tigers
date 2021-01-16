@@ -27,6 +27,7 @@ shop.
 ready to deploy on Raspberry Pi in Scrum Board. Next step is to start creating items for purchase and add cart management features.
 - folder containing HTML: https://github.com/TMarwah/P4Tigers/tree/main/templates
 - Integrated shop site: https://github.com/TMarwah/P4Tigers/blob/main/templates/index.html
+- Can be evaluated via runtime by using the home navbar to visit the shop homepage and seeing the successfully integrated HTML.
 
 -successfully integrated the home page as well as adding a navbar using Bootstrap that contains different tabs of possible items; currently ready to deploy
 on Raspberry Pi in Scrum Board
