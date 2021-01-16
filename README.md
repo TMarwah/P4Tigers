@@ -37,6 +37,14 @@ on Raspberry Pi in Scrum Board
 
 -runtime: http://104.63.255.27/
 
+# 1/15 Individual Support
+Charlie:
+
+Tanmay:
+
+Rohan:
+
+Eshaan:
 # Assignments
 Tanmay: integrate HTML template, link API, have a login feature
 
