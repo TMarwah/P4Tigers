@@ -41,7 +41,7 @@ on Raspberry Pi in Scrum Board
 -runtime: http://104.63.255.27/
 
 # 1/15 Individual Support
-Charlie:
+Charlie: Throughout thee week, the majority of my time was spent on making an about us page as well as helping Tanmay with integrating his HTML template. My work can be seen in the commit history mainly on January 15th.
 Scrum Master Evaluation: Charlie did a lot of work on the about us page and worked with Tanmay on integratign the HTML Template(20/20)
 
 Tanmay:
