@@ -50,7 +50,7 @@ Tanmay: Throughout the week, I was working on integrating the HTML template for 
 Rohan: I mostly worked on helping with the images and gifs and I recently added the login page which you can find as the LOGIN ADDITIONS in the commit history for January 16th. The images and gifs are part of Tanmay's commits on the 14th and such. 
 - Scrum Master Evaluation: Rohan helped to integrate the images and gifs and was mostly focused on front end such as the base login page(18/20)
 
-Eshaan: I deployed the website on the Raspberry Pi and assisted Charlie with help on the HTML. 
+Eshaan: I deployed the website on the Raspberry Pi and assisted Charlie with help on the HTML. Evidence can be seen with commits in January 15th and from last week on January 6th.
 - Scrum Master Evaluation: Eshaan deployed the website onto the Raspberry Pi and assisted Charlie with the HTML(18/20)
 
 *Scrum Master grading in accordance with their code commits in the history on github repo
