@@ -25,7 +25,8 @@ shop.
 # Completed Web Tickets
 -successfully used HTML code to program the shop homepage, along with the index and resolution tabs; currently 
 ready to deploy on Raspberry Pi in Scrum Board. Next step is to start creating items for purchase and add cart management features.
- -folder containing HTML: https://github.com/TMarwah/P4Tigers/tree/main/templates
+-folder containing HTML: https://github.com/TMarwah/P4Tigers/tree/main/templates
+-Integrated shop site: https://github.com/TMarwah/P4Tigers/blob/main/templates/index.html
 
 -successfully created a navbar using Bootstrap that contains different tabs of possible items; currently ready to deploy
 on Raspberry Pi in Scrum Board
