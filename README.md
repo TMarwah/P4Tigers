@@ -39,12 +39,18 @@ on Raspberry Pi in Scrum Board
 
 # 1/15 Individual Support
 Charlie:
+Scrum Master Evaluation: Charlie did a lot of work on the about us page and worked with Tanmay on integratign the HTML Template(20/20)
 
 Tanmay:
+Scrum Master Evaluation: Tanmay was the main factor in integrating the html page and did lots of work on images and animations(20/20)
 
-Rohan:
+Rohan: 
+Scrum Master Evaluation: Rohan helped to integrate the images and gifs and was mostly focused on front end such as the base login page(18/20)
 
 Eshaan:
+Scrum Master Evaluation: 
+
+*Scrum Master grading in accordance with their code commits in the history on github repo
 # Assignments
 Tanmay: integrate HTML template, link API, have a login feature
 
