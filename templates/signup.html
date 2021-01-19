@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="clearblock">
+    <form action="/newuser/" method="post" style="display:inline-grid; width:70%">
+        <h2 style="text-align: center; margin-left:auto; margin-right:auto;">Sign Up</h2>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; column-gap:26px;">
+            <div class="form-group">
+                <input autocomplete="off" autofocus class="form-control" name="first" placeholder="First Name" type="text">
+            </div>
+
+            <div class="form-group">
+                <input autocomplete="off" autofocus class="form-control" name="last" placeholder="Last Name" type="text">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="username" placeholder="Username" type="text">
+        </div>
+
+        <div class="form-group">
+            <input class="form-control" name="password" placeholder="Password" type="password">
+        </div>
+
+        <div class="form-group">
+            <input class="form-control" name="confirmation" placeholder="Confirm Password" type="password">
+        </div>
+
+        <button class="btn btn-primary sButton" type="submit">Sign Up</button>
+    </form>
+</div>
+
+{% endblock %}

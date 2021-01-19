@@ -114,11 +114,7 @@ margin-left: 4px;
         <div class="card">
             <div class="card-header">
                 <h3>Sign In</h3>
-                <div class="d-flex justify-content-end social_icon">
-                    <span><i class="fab fa-facebook-square"></i></span>
-                    <span><i class="fab fa-google-plus-square"></i></span>
-                    <span><i class="fab fa-twitter-square"></i></span>
-                </div>
+
             </div>
             <div class="card-body">
                 <form>
@@ -127,7 +123,6 @@ margin-left: 4px;
                             <span class="input-group-text"><i class="fas fa-user"></i></span>
                         </div>
                         <input type="text" class="form-control" placeholder="username">
-
                     </div>
                     <div class="input-group form-group">
                         <div class="input-group-prepend">
@@ -144,12 +139,11 @@ margin-left: 4px;
                 </form>
             </div>
             <div class="card-footer">
+                <form action="/signup" method="post" style="display:inline-grid;">
                 <div class="d-flex justify-content-center links">
-                    Don't have an account?<a href="#">Sign Up</a>
+                    Don't have an account?<a href="/signup">Sign Up</a>
                 </div>
-                <div class="d-flex justify-content-center">
-                    <a href="#">Forgot your password?</a>
-                </div>
+                </form>
             </div>
         </div>
     </div>
