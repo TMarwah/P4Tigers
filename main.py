@@ -3,7 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.sql import text
 from werkzeug.exceptions import default_exceptions, HTTPException, InternalServerError
 from werkzeug.security import check_password_hash, generate_password_hash
-from custom import apology
+from custom import error
 
 # create a Flask instance
 app = Flask(__name__)
@@ -54,15 +54,15 @@ def new_user():
     if request.method == "POST":
         # Make sure they put in their username
         if not request.form.get("username"):
-            return apology("must provide username", 403)
+            return error("must provide username", 1)
 
         # Make sure they put in a password
         elif not request.form.get("password"):
-            return apology("must provide password", 403)
+            return error("must provide password", 2)
 
         # Make sure the passwords match
         elif request.form.get("password") != request.form.get("confirmation"):
-            return apology("passwords must match", 403)
+            return error("passwords must match", 3)
 
         fullname = request.form.get("first") + request.form.get("last")
 
@@ -87,8 +87,8 @@ def signup():
         return render_template("login.html")
 
 @app.route("/<usr>")
-def newuser(newusr):
-    return f"<h1>{newusr}</h1>"
+def newuser(newuser):
+    return f"<h1>{newuser}</h1>"
 # Create a sign up page
 
 if __name__ == "__main__":
