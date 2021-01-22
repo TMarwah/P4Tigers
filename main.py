@@ -24,9 +24,9 @@ class Item(db.Model):
 
 @app.route('/api')
 def idk():
-    response = requests.get('http://aws.random.cat/meow%27')
+    response = requests.get('http://aws.random.cat/meow')
     image = response.json()['file']
-    return render_template("cat.html", image=image)
+    return render_template("api.html", image=image)
 
 @app.route('/h')
 def index():
