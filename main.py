@@ -11,11 +11,15 @@ app = Flask(__name__)
 
 
 # connects default URL of server to render home.html
-dbURI = 'sqlite:///models/myDB.db'
+dbURI = 'sqlite:///createDB'
 """ database setup to support db examples """
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SQLALCHEMY_DATABASE_URI'] = dbURI
 db = SQLAlchemy(app)
+class Item(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    product = db.Column(db.String(80), unique=False, nullable=False)
+    price = db.Column(db.String(120), unique=False, nullable=False)
 
 
 @app.route('/h')
@@ -24,10 +28,17 @@ def index():
 # Create a sign up page
 @app.route('/')
 def home_route():
+    item = Item(product="Black Shoes", price="$50")
+    db.session.add(item)
+    db.session.commit()
     return render_template("home.html")
 
 @app.route('/index')
 def index_route():
+    print (Item.query.all())
+    for item in Item.query.all():
+        print(item.product)
+        print(item.price)
     return render_template("index.html")
 
 @app.route('/testimonial')
@@ -93,5 +104,6 @@ def newuser(newuser):
 # Create a sign up page
 
 if __name__ == "__main__":
+    db.create_all()
     # runs the application on the repl development server
-    app.run(debug=True, port='3000', host='127.0.0.1')
+    app.run(debug=True, port='5000', host='127.0.0.1')
