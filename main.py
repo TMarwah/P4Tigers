@@ -5,6 +5,7 @@ from werkzeug.exceptions import default_exceptions, HTTPException, InternalServe
 from werkzeug.security import check_password_hash, generate_password_hash
 import sqlalchemy
 from custom import error
+import requests
 
 # create a Flask instance
 app = Flask(__name__)
@@ -21,6 +22,11 @@ class Item(db.Model):
     product = db.Column(db.String(80), unique=False, nullable=False)
     price = db.Column(db.String(120), unique=False, nullable=False)
 
+@app.route('/api')
+def idk():
+    response = requests.get('http://aws.random.cat/meow%27')
+    image = response.json()['file']
+    return render_template("cat.html", image=image)
 
 @app.route('/h')
 def index():
