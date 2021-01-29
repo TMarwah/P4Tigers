@@ -6,21 +6,26 @@ from werkzeug.security import check_password_hash, generate_password_hash
 import sqlalchemy
 from custom import error
 import requests
+import os
 
 # create a Flask instance
+basedir = os.path.abspath(os.path.dirname(__file__))
 app = Flask(__name__)
 
 
 # connects default URL of server to render home.html
-dbURI = 'sqlite:///createDB'
+dbURI = 'sqlite:///' + os.path.join(basedir, 'models/myDB.db')
 """ database setup to support db examples """
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SQLALCHEMY_DATABASE_URI'] = dbURI
 db = SQLAlchemy(app)
-class Item(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    product = db.Column(db.String(80), unique=False, nullable=False)
-    price = db.Column(db.String(120), unique=False, nullable=False)
+class Users(db.Model):
+    user_id = db.Column(db.Integer, primary_key=True)
+    first_name = db.Column(db.String(255), unique=False, nullable=False)
+    last_name = db.Column(db.String(255), unique=False, nullable=False)
+    username = db.Column(db.String(255), unique=True, nullable=False)
+    email = db.Column(db.String(255), unique=True, nullable=False)
+    password_hash = db.Column(db.String(128))
 
 @app.route('/api')
 def idk():
