@@ -19,13 +19,18 @@ dbURI = 'sqlite:///' + os.path.join(basedir, 'models/myDB.db')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SQLALCHEMY_DATABASE_URI'] = dbURI
 db = SQLAlchemy(app)
-class Users(db.Model):
+class User(db.Model):
     user_id = db.Column(db.Integer, primary_key=True)
     first_name = db.Column(db.String(255), unique=False, nullable=False)
     last_name = db.Column(db.String(255), unique=False, nullable=False)
     username = db.Column(db.String(255), unique=True, nullable=False)
     email = db.Column(db.String(255), unique=True, nullable=False)
     password_hash = db.Column(db.String(128))
+    def set_password(self, password):
+        self.password_hash = generate_password_hash(password)
+
+    def check_password(self, password):
+        return check_password_hash(self.password_hash, password)
 
 @app.route('/api')
 def idk():
@@ -39,17 +44,10 @@ def index():
 # Create a sign up page
 @app.route('/')
 def home_route():
-    item = Item(product="Black Shoes", price="$50")
-    db.session.add(item)
-    db.session.commit()
     return render_template("home.html")
 
 @app.route('/index')
 def index_route():
-    print (Item.query.all())
-    for item in Item.query.all():
-        print(item.product)
-        print(item.price)
     return render_template("index.html")
 
 @app.route('/testimonial')
