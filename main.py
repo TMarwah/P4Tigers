@@ -4,7 +4,7 @@ from sqlalchemy.sql import text
 from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, BooleanField, SubmitField
 from wtforms.validators import DataRequired, Email, EqualTo
-from flask_login import LoginManager, UserMixin
+from flask_login import LoginManager, UserMixin, login_required
 from werkzeug.exceptions import default_exceptions, HTTPException, InternalServerError
 from werkzeug.security import check_password_hash, generate_password_hash
 import sqlalchemy
@@ -16,7 +16,7 @@ import os
 basedir = os.path.abspath(os.path.dirname(__file__))
 app = Flask(__name__)
 login = LoginManager(app)
-
+login.login_view = 'login_route'
 
 # connects default URL of server to render home.html
 dbURI = 'sqlite:///' + os.path.join(basedir, 'models/myDB.db')
@@ -62,7 +62,8 @@ def idk():
     image = response.json()['file']
     return render_template("api.html", image=image)
 
-@app.route('/h')
+@app.route('/database')
+@login_required
 def index():
     return render_template("database.html")
 # Create a sign up page
@@ -85,13 +86,15 @@ def secret_route():
 # connects /hello path of server to render hello.html
 
 @app.route('/login', methods=['POST', 'GET'])
-def login():
+def login_route():
     logform = LoginForm()
-    secretpass = "hello"
-    if request.method == "POST":
-        # redirects us to the user page
-        if request.form.get("password") and request.form.get("confirmation") == secretpass:
-            return redirect("/secret")
+    if logform.validate_on_submit():
+        user = User.query.filter_by(username=logform.username.data).first()
+        if user is None or not user.check_password(logform.password.data):
+            flash("Login Failed")
+            return redirect("/login")
+        flash("Login Successful!")
+        return redirect("/database")
     else:
         return render_template("login.html", form = logform)
 
