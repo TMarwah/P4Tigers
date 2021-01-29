@@ -47,6 +47,11 @@ class RegisterForm(FlaskForm):
     email = StringField('Email', validators=[DataRequired(), Email()])
     submit = SubmitField('Register')
 
+class LoginForm(FlaskForm):
+    username = StringField('Username', validators=[DataRequired()])
+    password = PasswordField('Password', validators=[DataRequired()])
+    submit = SubmitField('Login')
+
 @login.user_loader
 def load_user(user_id):
     return User.query.get(int(user_id))
@@ -81,13 +86,14 @@ def secret_route():
 
 @app.route('/login', methods=['POST', 'GET'])
 def login():
+    logform = LoginForm()
     secretpass = "hello"
     if request.method == "POST":
         # redirects us to the user page
         if request.form.get("password") and request.form.get("confirmation") == secretpass:
             return redirect("/secret")
     else:
-        return render_template("login.html")
+        return render_template("login.html", form = logform)
 
 @app.route("/<usr>")
 def user(usr):
@@ -101,7 +107,8 @@ def new_user():
         newUser = User(username=regform.username.data, first_name=regform.firstname.data, last_name=regform.lastname.data, email=regform.email.data)
         newUser.set_password(regform.password.data)
         # Insert all the values into the database
-
+        db.session.add(newUser)
+        db.session.commit()
         return redirect("/login")
     else:
         return render_template("signup.html", form = regform)

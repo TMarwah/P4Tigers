@@ -122,19 +122,19 @@ margin-left: 4px;
                         <div class="input-group-prepend">
                             <span class="input-group-text"><i class="fas fa-user"></i></span>
                         </div>
-                        <input type="text" class="form-control" placeholder="username">
+                        {{form.username(size=64, class_="form-control", placeholder="Username")}}
+                        <!--<input type="text" class="form-control" placeholder="username">-->
                     </div>
                     <div class="input-group form-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text"><i class="fas fa-key"></i></span>
                         </div>
-                        <input type="password" class="form-control" placeholder="password">
-                    </div>
-                    <div class="row align-items-center remember">
-                        <input type="checkbox">Remember Me
+                        {{form.password(size=64, class_="form-control", placeholder="Password")}}
+                        <!--<input type="password" class="form-control" placeholder="password">-->
                     </div>
                     <div class="form-group">
-                         <input type="submit" value="Login" class="btn float-right login_btn">
+                        {{ form.submit(class_="btn float-right login_btn") }}
+                         <!--<input type="submit" value="Login" class="btn float-right login_btn">-->
                     </div>
                 </form>
             </div>
