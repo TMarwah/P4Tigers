@@ -1,6 +1,10 @@
 from flask import Flask, flash, jsonify, redirect, url_for, render_template, request, session, current_app, g
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.sql import text
+from flask_wtf import FlaskForm
+from wtforms import StringField, PasswordField, BooleanField, SubmitField
+from wtforms.validators import DataRequired, Email
+from flask_login import LoginManager, UserMixin
 from werkzeug.exceptions import default_exceptions, HTTPException, InternalServerError
 from werkzeug.security import check_password_hash, generate_password_hash
 import sqlalchemy
@@ -11,6 +15,7 @@ import os
 # create a Flask instance
 basedir = os.path.abspath(os.path.dirname(__file__))
 app = Flask(__name__)
+login = LoginManager(app)
 
 
 # connects default URL of server to render home.html
@@ -18,8 +23,9 @@ dbURI = 'sqlite:///' + os.path.join(basedir, 'models/myDB.db')
 """ database setup to support db examples """
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SQLALCHEMY_DATABASE_URI'] = dbURI
+app.config['SECRET_KEY'] = "qwerty"
 db = SQLAlchemy(app)
-class User(db.Model):
+class User(UserMixin, db.Model):
     user_id = db.Column(db.Integer, primary_key=True)
     first_name = db.Column(db.String(255), unique=False, nullable=False)
     last_name = db.Column(db.String(255), unique=False, nullable=False)
@@ -31,6 +37,19 @@ class User(db.Model):
 
     def check_password(self, password):
         return check_password_hash(self.password_hash, password)
+
+class RegisterForm(FlaskForm):
+    username = StringField('Username', validators=[DataRequired()])
+    password = PasswordField('Password', validators=[DataRequired()])
+    firstname = StringField('First Name', validators=[DataRequired()])
+    lastname = StringField('Last Name', validators=[DataRequired()])
+    email = StringField('Email', validators=[DataRequired(), Email()])
+    rememberme = BooleanField('Remember Me')
+    submit = SubmitField('Sign In')
+
+@login.user_loader
+def load_user(user_id):
+    return User.query.get(int(user_id))
 
 @app.route('/api')
 def idk():
