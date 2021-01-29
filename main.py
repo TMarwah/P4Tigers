@@ -3,7 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.sql import text
 from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, BooleanField, SubmitField
-from wtforms.validators import DataRequired, Email
+from wtforms.validators import DataRequired, Email, EqualTo
 from flask_login import LoginManager, UserMixin
 from werkzeug.exceptions import default_exceptions, HTTPException, InternalServerError
 from werkzeug.security import check_password_hash, generate_password_hash
@@ -41,11 +41,11 @@ class User(UserMixin, db.Model):
 class RegisterForm(FlaskForm):
     username = StringField('Username', validators=[DataRequired()])
     password = PasswordField('Password', validators=[DataRequired()])
+    passwordconfirm = PasswordField('Confirm Password', validators=[DataRequired(), EqualTo("password")])
     firstname = StringField('First Name', validators=[DataRequired()])
     lastname = StringField('Last Name', validators=[DataRequired()])
     email = StringField('Email', validators=[DataRequired(), Email()])
-    rememberme = BooleanField('Remember Me')
-    submit = SubmitField('Sign In')
+    submit = SubmitField('Register')
 
 @login.user_loader
 def load_user(user_id):
@@ -95,31 +95,16 @@ def user(usr):
 
 @app.route('/newuser/', methods=["GET", "POST"])
 def new_user():
+    regform = RegisterForm()
     """Register user"""
-    if request.method == "POST":
-        # Make sure they put in their username
-        if not request.form.get("username"):
-            return error("must provide username", 1)
-
-        # Make sure they put in a password
-        elif not request.form.get("password"):
-            return error("must provide password", 2)
-
-        # Make sure the passwords match
-        elif request.form.get("password") != request.form.get("confirmation"):
-            return error("passwords must match", 3)
-
-        fullname = request.form.get("first") + request.form.get("last")
-
+    if regform.validate_on_submit():
+        newUser = User(username=regform.username.data, first_name=regform.firstname.data, last_name=regform.lastname.data, email=regform.email.data)
+        newUser.set_password(regform.password.data)
         # Insert all the values into the database
-        db.engine.execute(text("INSERT INTO users (username, hash, name) VALUES (:user, :hash, :name);").execution_options(autocommit=True),
-                          user=request.form.get("username"),
-                          hash=generate_password_hash(request.form.get("password")),
-                          name=fullname)
 
         return redirect("/login")
     else:
-        return render_template("signup.html")
+        return render_template("signup.html", form = regform)
 
 # connects /flask path of server to render flask.html
 @app.route('/signup', methods=['POST','GET'])
