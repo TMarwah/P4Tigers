@@ -13,3 +13,4 @@ def amazon_api():
 
     print(response.text)
     return response.text
+

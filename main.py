@@ -52,13 +52,18 @@ def testimonial_route():
     return render_template("testmonial.html")
 # connects /hello path of server to render hello.html
 
+@app.route('/secret')
+def secret_route():
+    return render_template("secret.html")
+# connects /hello path of server to render hello.html
 
 @app.route('/login', methods=['POST', 'GET'])
 def login():
+    secretpass = "hello"
     if request.method == "POST":
-        user = request.form["username"]  # using name as dictionary key
         # redirects us to the user page
-        return redirect(url_for("user", usr=user))
+        if request.form.get("password") and request.form.get("confirmation") == secretpass:
+            return redirect("/secret")
     else:
         return render_template("login.html")
 
