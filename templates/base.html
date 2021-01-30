@@ -61,15 +61,29 @@
             <a class="nav-link" href="/testimonial">About Us</a>
             <a class="nav-link" href="/index">Shop</a>
             <a class="nav-link" href="/login">Login</a>
-            <a class="nav-link" href="/h">Database</a>
+            <a class="nav-link" href="/database">Database</a>
             <a class="nav-link" href="/api">API</a>
+            <a class="nav-link" href="/logout">Logout</a>
         </div>
     </div>
 </nav>
 
 
 <div>
+    {% block title %}
+    {% endblock %}
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+
+    {% for message in messages %}
+    <span style = "color: white">{{ message }}</span>
+    {% endfor %}
+
+    {% endif %}
+    {% endwith %}
     {% block header %}
+    {% endblock %}
+    {% block projectplan %}
     {% endblock %}
     {% block content %}
     {% endblock %}

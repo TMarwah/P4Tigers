@@ -1,0 +1,6 @@
+flask
+flask_sqlalchemy
+requests
+flask-login
+flask-wtf
+wtforms[email]
