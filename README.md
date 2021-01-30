@@ -40,7 +40,8 @@ on Raspberry Pi in Scrum Board
 
 -runtime: http://104.63.255.27/
 
--EASTER EGG FOR WEEK OF JAN 29: http://104.63.255.27/secret
+# EASTER EGG FOR WEEK OF JAN 29: 
+http://104.63.255.27/secret
 
 # 1/15 Individual Support
 Charlie: This week, my main focus was making an about us page that utilized bootstrap. I also helped with integrating the HTML template. My evidence can be seen on January 15th in the commit history.
