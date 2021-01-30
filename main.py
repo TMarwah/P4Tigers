@@ -66,10 +66,9 @@ def idk():
 @app.route('/database')
 @login_required
 def index():
-    curs.execute("SELECT * FROM Users")
-    data = curs.fetchall()
+    data = User.query.all()
     return render_template('database.html', data=data)
-    return render_template("database.html")
+
 # Create a sign up page
 @app.route('/')
 def home_route():
