@@ -104,7 +104,7 @@ def login_route():
             return redirect("/login")
         login_user(user)
         flash("Login Successful!")
-        if logform.username.data == "hello":
+        if logform.username.data == "secret":
             return redirect("/secret")
         nextpage = request.args.get("next")
         if not nextpage or url_parse(nextpage).netloc != '':
