@@ -72,17 +72,17 @@
 <div>
     {% block title %}
     {% endblock %}
-    {% block header %}
-    {% endblock %}
     {% with messages = get_flashed_messages() %}
     {% if messages %}
 
-        {% for message in messages %}
-        <span style = "color: white">{{ message }}</span>
-        {% endfor %}
+    {% for message in messages %}
+    <span style = "color: white">{{ message }}</span>
+    {% endfor %}
 
     {% endif %}
     {% endwith %}
+    {% block header %}
+    {% endblock %}
     {% block projectplan %}
     {% endblock %}
     {% block content %}

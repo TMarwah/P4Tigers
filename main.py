@@ -108,7 +108,7 @@ def login_route():
             return redirect("/secret")
         nextpage = request.args.get("next")
         if not nextpage or url_parse(nextpage).netloc != '':
-            nextpage = redirect('/')
+            return redirect('/')
         return redirect(nextpage)
     else:
         return render_template("login.html", form = logform)
