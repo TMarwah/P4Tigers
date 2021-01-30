@@ -1,8 +1,8 @@
 {% extends 'base.html' %}
 {% block content %}
 <div class="clearblock" style="color:white ">
-    <form action="" method="post" style="display:inline-grid; width:70%" novalidate>
-
+    <form method="post" style="display:inline-grid; width:70%" novalidate>
+        {{ form.hidden_tag() }}
         <span>{{ form.username.label }}:</span> {{ form.username(size=64) }}
         <span>{{ form.firstname.label }}:</span> {{ form.firstname(size=64) }}
         <span>{{ form.lastname.label }}:</span> {{ form.lastname(size=64) }}

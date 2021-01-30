@@ -117,7 +117,8 @@ margin-left: 4px;
 
             </div>
             <div class="card-body">
-                <form>
+                <form method="post">
+                    {{ form.hidden_tag() }}
                     <div class="input-group form-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text"><i class="fas fa-user"></i></span>
@@ -139,7 +140,7 @@ margin-left: 4px;
                 </form>
             </div>
             <div class="card-footer">
-                <form action="/signup" method="post" style="display:inline-grid;">
+                <form action="/newuser" method="post" style="display:inline-grid;">
                 <div class="d-flex justify-content-center links">
                     Don't have an account?<a href="/newuser">Sign Up</a>
                 </div>

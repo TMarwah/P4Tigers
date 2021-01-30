@@ -4,9 +4,10 @@ from sqlalchemy.sql import text
 from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, BooleanField, SubmitField
 from wtforms.validators import DataRequired, Email, EqualTo
-from flask_login import LoginManager, UserMixin, login_required
+from flask_login import LoginManager, UserMixin, login_required, login_user, logout_user
 from werkzeug.exceptions import default_exceptions, HTTPException, InternalServerError
 from werkzeug.security import check_password_hash, generate_password_hash
+from werkzeug.urls import url_parse
 import sqlalchemy
 from custom import error
 import requests
@@ -26,7 +27,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = dbURI
 app.config['SECRET_KEY'] = "qwerty"
 db = SQLAlchemy(app)
 class User(UserMixin, db.Model):
-    user_id = db.Column(db.Integer, primary_key=True)
+    id = db.Column(db.Integer, primary_key=True)
     first_name = db.Column(db.String(255), unique=False, nullable=False)
     last_name = db.Column(db.String(255), unique=False, nullable=False)
     username = db.Column(db.String(255), unique=True, nullable=False)
@@ -53,8 +54,8 @@ class LoginForm(FlaskForm):
     submit = SubmitField('Login')
 
 @login.user_loader
-def load_user(user_id):
-    return User.query.get(int(user_id))
+def load_user(id):
+    return User.query.get(int(id))
 
 @app.route('/api')
 def idk():
@@ -80,6 +81,12 @@ def testimonial_route():
     return render_template("testmonial.html")
 # connects /hello path of server to render hello.html
 
+@app.route('/logout')
+@login_required
+def logout():
+    logout_user()
+    return redirect("/")
+
 @app.route('/secret')
 def secret_route():
     return render_template("secret.html")
@@ -93,7 +100,12 @@ def login_route():
         if user is None or not user.check_password(logform.password.data):
             flash("Login Failed")
             return redirect("/login")
+        login_user(user)
         flash("Login Successful!")
+        nextpage = request.args.get("next")
+        if not nextpage or url_parse(nextpage).netloc != '':
+            nextpage = redirect('/')
+        return redirect(nextpage)
         return redirect("/database")
     else:
         return render_template("login.html", form = logform)
