@@ -64,6 +64,15 @@ Rohan: front end, make website look nice plus about us page
 Eshaan: create database to track users, create a program that adds and saves items in a virtual cart
 
 # Update Log
+## Week 5:
+-built the login and sign-up system
+
+-finished the database for tracking the users
+
+-implememented Easter Egg
+
+-fixed API
+
 ## Week 4:
 -deployed the website on the Raspberry Pi
 
