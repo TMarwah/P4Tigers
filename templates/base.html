@@ -70,7 +70,8 @@
 
 
 <div>
-
+    {% block title %}
+    {% endblock %}
     {% block header %}
     {% endblock %}
     {% with messages = get_flashed_messages() %}

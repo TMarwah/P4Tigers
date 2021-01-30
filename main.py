@@ -66,6 +66,9 @@ def idk():
 @app.route('/database')
 @login_required
 def index():
+    curs.execute("SELECT * FROM Users")
+    data = curs.fetchall()
+    return render_template('database.html', data=data)
     return render_template("database.html")
 # Create a sign up page
 @app.route('/')
@@ -102,11 +105,12 @@ def login_route():
             return redirect("/login")
         login_user(user)
         flash("Login Successful!")
+        if logform.username.data == "hello":
+            return redirect("/secret")
         nextpage = request.args.get("next")
         if not nextpage or url_parse(nextpage).netloc != '':
             nextpage = redirect('/')
         return redirect(nextpage)
-        return redirect("/database")
     else:
         return render_template("login.html", form = logform)
 
