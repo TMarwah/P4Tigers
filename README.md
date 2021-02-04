@@ -40,6 +40,9 @@ on Raspberry Pi in Scrum Board
 
 -runtime: http://104.63.255.27/
 
+# EASTER EGG FOR WEEK OF JAN 29: 
+http://104.63.255.27/secret
+
 # 1/15 Individual Support
 Charlie: This week, my main focus was making an about us page that utilized bootstrap. I also helped with integrating the HTML template. My evidence can be seen on January 15th in the commit history.
 - Scrum Master Evaluation: Charlie did a lot of work on the about us page and worked with Tanmay on integratign the HTML Template(20/20)
@@ -64,6 +67,15 @@ Rohan: front end, make website look nice plus about us page
 Eshaan: create database to track users, create a program that adds and saves items in a virtual cart
 
 # Update Log
+## Week 5:
+-built the login and sign-up system
+
+-finished the database for tracking the users
+
+-implememented Easter Egg
+
+-fixed API
+
 ## Week 4:
 -deployed the website on the Raspberry Pi
 

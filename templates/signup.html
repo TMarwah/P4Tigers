@@ -1,32 +1,15 @@
 {% extends 'base.html' %}
 {% block content %}
-<div class="clearblock">
-    <form action="/newuser/" method="post" style="display:inline-grid; width:70%">
-        <h2 style="text-align: center; margin-left:auto; margin-right:auto;color: white">Sign Up</h2>
-
-        <div style="display: grid; grid-template-columns: 1fr 1fr; column-gap:26px;">
-            <div class="form-group">
-                <input autocomplete="off" autofocus class="form-control" name="first" placeholder="First Name" type="text">
-            </div>
-
-            <div class="form-group">
-                <input autocomplete="off" autofocus class="form-control" name="last" placeholder="Last Name" type="text">
-            </div>
-        </div>
-
-        <div class="form-group">
-            <input autocomplete="off" autofocus class="form-control" name="username" placeholder="Username" type="text">
-        </div>
-
-        <div class="form-group">
-            <input class="form-control" name="password" placeholder="Password" type="password">
-        </div>
-
-        <div class="form-group">
-            <input class="form-control" name="confirmation" placeholder="Confirm Password" type="password">
-        </div>
-
-        <button class="btn btn-primary sButton" type="submit" style="color: white">Sign Up</button>
+<div class="clearblock" style="color:white ">
+    <form method="post" style="display:inline-grid; width:70%" novalidate>
+        {{ form.hidden_tag() }}
+        <span>{{ form.username.label }}:</span> {{ form.username(size=64) }}
+        <span>{{ form.firstname.label }}:</span> {{ form.firstname(size=64) }}
+        <span>{{ form.lastname.label }}:</span> {{ form.lastname(size=64) }}
+        <span>{{ form.password.label }}:</span> {{ form.password(size=64) }}
+        <span>{{ form.passwordconfirm.label }}:</span> {{ form.passwordconfirm(size=64) }}
+        <span>{{ form.email.label }}:</span> {{ form.email(size=120) }}
+         {{ form.submit() }}
     </form>
 </div>
 

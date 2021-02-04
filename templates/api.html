@@ -1,6 +1,10 @@
-<!DOCTYPE html>
-<html>
+{% extends "base.html" %}
+
+{% block content %}
+<div class="api" style="color:white">
+    <h1><strong class="color">Refresh to see new Cats!</strong></h1>
+</div>
 <body>
 <img src="{{image}}">
 </body>
-</html>
+{% endblock %}
