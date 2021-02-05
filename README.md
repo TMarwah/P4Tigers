@@ -90,7 +90,11 @@ our knowledge in design(visuals), having a database for function and purpose,  a
 
 ## Big Idea 4
 ![image](https://user-images.githubusercontent.com/72889453/106980628-60be7200-6715-11eb-9bef-c213a193051d.png)
-- hello
+- The significance of the internet in our project is that we us RPi as a way to connect the website with the web so it can be viewed by anyone
+- The routes in the main.py folder are what allows this to be achieved as they help to find a path from the sender to receiver in order to be viewed
+- Fault tolerance means there are multiple routes in order to avoid errors, but this may be something we can improve on by adding more than one path between devices
+- Parallel and distributed computing means the processes are split into parts in order to improve efficiency of getting solutions
+- We could improve our website by using mutliple devices which will allow us to scale solutions more effectively for the website's data or anything of the sort
 
 ## Big Idea 5
 ![image](https://user-images.githubusercontent.com/72889453/106980683-7af85000-6715-11eb-845b-3e520a35acde.png)
