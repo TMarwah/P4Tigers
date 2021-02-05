@@ -23,6 +23,8 @@ shop.
 - Adding items to a cart and having the program save those items in the cart
 - Navbar with Bootstrap that will contain different tabs for the site
 
+---------------------------
+
 # Completed Web Tickets
 ## Frontend Shop site
 - successfully used HTML code to program the shop homepage, along with the index and resolution tabs; currently 
@@ -60,6 +62,39 @@ on Raspberry Pi in Scrum Board
 ## EASTER EGG FOR WEEK OF JAN 29: 
 - [Runtime Link](http://104.63.255.27/secret)
 - [Link to Easter Egg Ticket](https://github.com/TMarwah/P4Tigers/projects/1#card-54290639)
+
+--------------------------------------
+
+# College Board Considerations
+## Big Idea 1
+![image](https://user-images.githubusercontent.com/72889453/106979863-07a20e80-6714-11eb-8754-934a3f4be36a.png)
+- Creative developement is furthered throughout this project because of the constant need of collaboration, without working together, the project would never function.
+- Program Function, Purpose, Design, and Developement are also achieved because this project shows our competence in being able to achieve a shopping website that showcases 
+our knowledge in design(visuals), having a database for function and purpose,  and it all being achieved through trial and error developement.
+- As said before, correcting errors is integrated into our trial and error process of making the website, as it requires us to tirelessly identify bugs and fix them.
+
+## Big Idea 2
+![image](https://user-images.githubusercontent.com/72889453/106980497-27860200-6715-11eb-9977-4001f3496e4f.png)
+- hello
+
+## Big Idea 3
+![image](https://user-images.githubusercontent.com/72889453/106980576-484e5780-6715-11eb-9fd1-6148bcb9feb6.png)
+- A multitude of these concepts are covered through the developing of our web server, such as variables and assignmentsbeing essential for our database as well data abstraction being an absolute must for the signup page to work in tandem with the database in storing users.
+- To go even further, oru project is utilizing multiple nested conditionals as well as for loops which address iteration.
+- If statements are also utilized within the app routes to show our knowledge of conditionals
+- Booleans and string knowledge are also utilized in order to allow users to input strings as their usernames as well as allowing booleans being used in order to detect whether a login is valid or invalid.
+- Functions are also called throughout our main.py in order to make the program cleaner, with functions being defined elsewhere.
+- Mathematical expressions can also be utilized to calculate the total of a certain user's cart when they decide on what items they want.
+
+## Big Idea 4
+![image](https://user-images.githubusercontent.com/72889453/106980628-60be7200-6715-11eb-9bef-c213a193051d.png)
+- hello
+
+## Big Idea 5
+![image](https://user-images.githubusercontent.com/72889453/106980683-7af85000-6715-11eb-845b-3e520a35acde.png)
+- hello
+
+-----------------------------------
 
 # 1/15 Individual Support
 Charlie: This week, my main focus was making an about us page that utilized bootstrap. I also helped with integrating the HTML template. My evidence can be seen on January 15th in the commit history.
