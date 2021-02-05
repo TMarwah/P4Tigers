@@ -24,25 +24,42 @@ shop.
 - Navbar with Bootstrap that will contain different tabs for the site https://github.com/TMarwah/P4Tigers/blob/main/templates/base.html
 
 # Completed Web Tickets
--successfully used HTML code to program the shop homepage, along with the index and resolution tabs; currently 
+## Frontend Shop site
+- successfully used HTML code to program the shop homepage, along with the index and resolution tabs; currently 
 ready to deploy on Raspberry Pi in Scrum Board. Next step is to start creating items for purchase and add cart management features.
-- folder containing HTML: https://github.com/TMarwah/P4Tigers/tree/main/templates
-- Integrated shop site: https://github.com/TMarwah/P4Tigers/blob/main/templates/index.html
+- [Folder containing HTML](https://github.com/TMarwah/P4Tigers/tree/main/templates)
+- [Integrated shop site](https://github.com/TMarwah/P4Tigers/blob/main/templates/index.html)
 - Can be evaluated via runtime by using the home navbar to visit the shop homepage and seeing the successfully integrated HTML.
+- [Link to Ticket](https://github.com/TMarwah/P4Tigers/projects/1#card-52173603)
 
--successfully integrated the home page as well as adding a navbar using Bootstrap that contains different tabs of possible items; currently ready to deploy
+## Integration of Homepage and Navbar
+- successfully integrated the home page as well as adding a navbar using Bootstrap that contains different tabs of possible items; currently ready to deploy
 on Raspberry Pi in Scrum Board
 - file containing Bootstrap: https://github.com/TMarwah/P4Tigers/blob/main/templates/base.html
 - Can be evaluated via runtime by running the project and checking if the navbar does lead to the different tabs on our website.
+- [Link to Ticket](https://github.com/TMarwah/P4Tigers/projects/1#card-51099265)
 
--successfully made a completed about us page with visuals and bootstrap buttons to scroll through the team, as well as a carousel on the bottom in which individual slides can be picked by the viewer; currently ready to deploy.
+## Visuals
+- successfully made a completed about us page with visuals and bootstrap buttons to scroll through the team, as well as a carousel on the bottom in which individual slides can be picked by the viewer; currently ready to deploy.
 - file containing bootstrap and visual code: https://github.com/TMarwah/P4Tigers/blob/main/templates/testmonial.html
 - Can be evaluated via runtime by checking if the bootstrap carousel and buttons successfully scroll through the different profiles in the about us page.
+- [Link To Ticket](https://github.com/TMarwah/P4Tigers/projects/1#card-52390925)
 
+## Database
+- This is a main feature for our website. Our database shows all user information and works in tandem with the signup page.
+- Can only be accessed by users are logged in because of [this](https://github.com/TMarwah/P4Tigers/blob/main/main.py#L67) feature.
+- table takes values from database in order to be displayed.
+- [Link to Ticket](https://github.com/TMarwah/P4Tigers/projects/1#card-51100463)
+
+## [Login](https://github.com/TMarwah/P4Tigers/blob/main/main.py#L97), [Logout](https://github.com/TMarwah/P4Tigers/blob/main/main.py#L86), and [Signup](https://github.com/TMarwah/P4Tigers/blob/main/main.py#L120)
+- all successfully work with eachother in order to create a login page that aids the user
+- [Link to Login and Logout Ticket](https://github.com/TMarwah/P4Tigers/projects/1#card-51100465)
+- [link to Signup Ticket](https://github.com/TMarwah/P4Tigers/projects/1#card-53870090)
 -runtime: http://104.63.255.27/
 
-# EASTER EGG FOR WEEK OF JAN 29: 
-http://104.63.255.27/secret
+## EASTER EGG FOR WEEK OF JAN 29: 
+- [Runtime Link](http://104.63.255.27/secret)
+- [Link to Easter Egg Ticket](https://github.com/TMarwah/P4Tigers/projects/1#card-54290639)
 
 # 1/15 Individual Support
 Charlie: This week, my main focus was making an about us page that utilized bootstrap. I also helped with integrating the HTML template. My evidence can be seen on January 15th in the commit history.
@@ -66,6 +83,8 @@ Charlie: add images (pngs), checkout feature, integrate HTML template, set up na
 Rohan: front end, make website look nice plus about us page
 
 Eshaan: create database to track users, create a program that adds and saves items in a virtual cart
+
+-----------------
 
 # Update Log
 ## Week 5:
