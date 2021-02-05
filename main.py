@@ -149,4 +149,4 @@ def newuser(newuser):
 if __name__ == "__main__":
     db.create_all()
     # runs the application on the repl development server
-    app.run(debug=True, port='80', host='192.168.1.160')
+    app.run(debug=True)

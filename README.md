@@ -75,12 +75,14 @@ our knowledge in design(visuals), having a database for function and purpose,  a
 
 ## Big Idea 2
 ![image](https://user-images.githubusercontent.com/72889453/106980497-27860200-6715-11eb-9977-4001f3496e4f.png)
-- hello
+- Data values are stored in a database that is presented as a table when seen on website
+- Metadata is also presented on the database table, as it is data on data of each user that logs onto the website
+- Password hashing is also metadata, as the hashed text is considered data, and it stores data, which is the password
 
 ## Big Idea 3
 ![image](https://user-images.githubusercontent.com/72889453/106980576-484e5780-6715-11eb-9fd1-6148bcb9feb6.png)
-- A multitude of these concepts are covered through the developing of our web server, such as variables and assignmentsbeing essential for our database as well data abstraction being an absolute must for the signup page to work in tandem with the database in storing users.
-- To go even further, oru project is utilizing multiple nested conditionals as well as for loops which address iteration.
+- A multitude of these concepts are covered through the developing of our web server, such as variables and assignments being essential for our database as well data abstraction being an absolute must for the signup page to work in tandem with the database in storing users.
+- To go even further, our project is utilizing multiple nested conditionals as well as for loops which address iteration.
 - If statements are also utilized within the app routes to show our knowledge of conditionals
 - Booleans and string knowledge are also utilized in order to allow users to input strings as their usernames as well as allowing booleans being used in order to detect whether a login is valid or invalid.
 - Functions are also called throughout our main.py in order to make the program cleaner, with functions being defined elsewhere.
@@ -122,6 +124,13 @@ Eshaan: create database to track users, create a program that adds and saves ite
 -----------------
 
 # Update Log
+##Week 6:
+-fixed gunicorn and nginx
+
+-pushed all changes to RPi
+
+-cleaned up database issue
+
 ## Week 5:
 -built the login and sign-up system
 
