@@ -98,7 +98,9 @@ our knowledge in design(visuals), having a database for function and purpose,  a
 
 ## Big Idea 5
 ![image](https://user-images.githubusercontent.com/72889453/106980683-7af85000-6715-11eb-845b-3e520a35acde.png)
-- hello
+- Our small scale project does not have much to gain from methods like crowdsourcing, but if we were to implement this system we could create a mebership system for the site where people can sign up for a monthly account and in return they can get coupons and other perks for the site
+- We took into account ethical computer and safety when we created our login system. Account passwords are automatically encrypted which ensures that packets containing passwords are not easily readable and accounts can stay secure
+- Our website is on the positive end of impacting the internet as it is a method by which people can view and purchase products without needing to go to a store, which is convenient for the user
 
 -----------------------------------
 
