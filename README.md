@@ -47,13 +47,13 @@ on Raspberry Pi in Scrum Board
 - Can be evaluated via runtime by checking if the bootstrap carousel and buttons successfully scroll through the different profiles in the about us page.
 - [Link To Ticket](https://github.com/TMarwah/P4Tigers/projects/1#card-52390925)
 
-## Database
+## [Database](https://github.com/TMarwah/P4Tigers/blob/main/main.py#L120)
 - This is a main feature for our website. Our database shows all user information and works in tandem with the signup page.
 - Can only be accessed by users are logged in because of [this](https://github.com/TMarwah/P4Tigers/blob/main/main.py#L67) feature.
 - table takes values from database in order to be displayed.
 - [Link to Ticket](https://github.com/TMarwah/P4Tigers/projects/1#card-51100463)
 
-## [Login](https://github.com/TMarwah/P4Tigers/blob/main/main.py#L97), [Logout](https://github.com/TMarwah/P4Tigers/blob/main/main.py#L86), and [Signup](https://github.com/TMarwah/P4Tigers/blob/main/main.py#L120)
+## [Login](https://github.com/TMarwah/P4Tigers/blob/main/main.py#L97), [Logout](https://github.com/TMarwah/P4Tigers/blob/main/main.py#L86), and [Signup](https://github.com/TMarwah/P4Tigers/blob/main/main.py#L42)
 - all successfully work with eachother in order to create a login page that aids the user
 - [Link to Login and Logout Ticket](https://github.com/TMarwah/P4Tigers/projects/1#card-51100465)
 - [link to Signup Ticket](https://github.com/TMarwah/P4Tigers/projects/1#card-53870090)
