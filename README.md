@@ -16,12 +16,12 @@ shop.
 
 # What will the website feature?
 - Login system that allows user to create accounts
-- Clothing options, such as sweaters and shoes that the user can purchase https://github.com/TMarwah/P4Tigers/blob/main/templates/index.html
+- Clothing options, such as sweaters and shoes that the user can purchase
 - Options for users with accounts to set default addresses and card information
 - Having a database that tracks what certain users buy
 - Having a Checkout Feature
 - Adding items to a cart and having the program save those items in the cart
-- Navbar with Bootstrap that will contain different tabs for the site https://github.com/TMarwah/P4Tigers/blob/main/templates/base.html
+- Navbar with Bootstrap that will contain different tabs for the site
 
 # Completed Web Tickets
 ## Frontend Shop site
@@ -35,13 +35,13 @@ ready to deploy on Raspberry Pi in Scrum Board. Next step is to start creating i
 ## Integration of Homepage and Navbar
 - successfully integrated the home page as well as adding a navbar using Bootstrap that contains different tabs of possible items; currently ready to deploy
 on Raspberry Pi in Scrum Board
-- file containing Bootstrap: https://github.com/TMarwah/P4Tigers/blob/main/templates/base.html
+- [file containing Bootstrap](https://github.com/TMarwah/P4Tigers/blob/main/templates/base.html)
 - Can be evaluated via runtime by running the project and checking if the navbar does lead to the different tabs on our website.
 - [Link to Ticket](https://github.com/TMarwah/P4Tigers/projects/1#card-51099265)
 
 ## Visuals
 - successfully made a completed about us page with visuals and bootstrap buttons to scroll through the team, as well as a carousel on the bottom in which individual slides can be picked by the viewer; currently ready to deploy.
-- file containing bootstrap and visual code: https://github.com/TMarwah/P4Tigers/blob/main/templates/testmonial.html
+- [file containing bootstrap and visual code](https://github.com/TMarwah/P4Tigers/blob/main/templates/testmonial.html)
 - Can be evaluated via runtime by checking if the bootstrap carousel and buttons successfully scroll through the different profiles in the about us page.
 - [Link To Ticket](https://github.com/TMarwah/P4Tigers/projects/1#card-52390925)
 
