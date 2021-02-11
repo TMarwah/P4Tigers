@@ -9,7 +9,6 @@ from werkzeug.exceptions import default_exceptions, HTTPException, InternalServe
 from werkzeug.security import check_password_hash, generate_password_hash
 from werkzeug.urls import url_parse
 import sqlalchemy
-from custom import error
 import requests
 import os
 
@@ -141,10 +140,6 @@ def signup():
     else:
         return render_template("login.html")
 
-@app.route("/<usr>")
-def newuser(newuser):
-    return f"<h1>{newuser}</h1>"
-# Create a sign up page
 
 if __name__ == "__main__":
     db.create_all()
