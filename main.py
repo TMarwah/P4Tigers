@@ -9,7 +9,6 @@ from werkzeug.exceptions import default_exceptions, HTTPException, InternalServe
 from werkzeug.security import check_password_hash, generate_password_hash
 from werkzeug.urls import url_parse
 import sqlalchemy
-from custom import error
 import requests
 import os
 
