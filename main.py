@@ -12,13 +12,13 @@ import sqlalchemy
 import requests
 import os
 
-# create a Flask instance
+#create a Flask instance
 basedir = os.path.abspath(os.path.dirname(__file__))
 app = Flask(__name__)
 login = LoginManager(app)
 login.login_view = 'login_route'
 
-# connects default URL of server to render home.html
+#connects default URL of server to render home.html
 dbURI = 'sqlite:///' + os.path.join(basedir, 'models/myDB.db')
 """ database setup to support db examples """
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
@@ -91,7 +91,7 @@ def logout():
 @app.route('/secret')
 def secret_route():
     return render_template("secret.html")
-# connects /hello path of server to render hello.html
+#connects /hello path of server to render hello.html
 
 @app.route('/login', methods=['POST', 'GET'])
 def login_route():
@@ -130,7 +130,7 @@ def new_user():
     else:
         return render_template("signup.html", form = regform)
 
-# connects /flask path of server to render flask.html
+#connects /flask path of server to render flask.html
 @app.route('/signup', methods=['POST','GET'])
 def signup():
     if request.method == "POST":
@@ -143,9 +143,9 @@ def signup():
 @app.route("/<usr>")
 def newuser(newuser):
     return f"<h1>{newuser}</h1>"
-# Create a sign up page
+#Create a sign up page
 
 if __name__ == "__main__":
     db.create_all()
-    # runs the application on the repl development server
+    #runs the application on the repl development server
     app.run(debug=True)
