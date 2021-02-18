@@ -65,7 +65,8 @@ on Raspberry Pi in Scrum Board
 
 --------------------------------------
 
-# College Board Considerations
+# [College Board Considerations](https://docs.google.com/document/d/1O279rqgBkT8BU5zq1z90Pj5j0YFc0xgz8ofzj0U-PlQ/edit)
+
 ## Big Idea 1
 ![image](https://user-images.githubusercontent.com/72889453/106979863-07a20e80-6714-11eb-8754-934a3f4be36a.png)
 - Creative developement is furthered throughout this project because of the constant need of collaboration, without working together, the project would never function.
