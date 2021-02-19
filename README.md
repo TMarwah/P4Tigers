@@ -145,6 +145,11 @@ Eshaan: create database to track users, create a program that adds and saves ite
 -----------------
 
 # Update Log
+## Week 7:
+-updated RPi
+
+-began planning on incorporating search bar and lists into website
+
 ## Week 6:
 -fixed gunicorn and nginx
 
