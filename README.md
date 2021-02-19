@@ -74,7 +74,8 @@ on Raspberry Pi in Scrum Board
 ![image](https://user-images.githubusercontent.com/72889453/108459692-03094a00-722c-11eb-9c7a-bd02bf6862c7.png)
 - This was an example of what we pulled from this week's tech talk
 - We saw how Trish modeled how her data was being displayed in her Pacman site, and decided to play around with it
-- Overall it made it so that we could smoothly display to the user all the other users logged in the database.
+- Overall it made it so that we could smoothly display to the user all the other users logged in the database
+- We were also able to further learn about transferring variables from python into HTML with the help of code similar to Jhinja.
 
 ---------------------------------------
 
