@@ -25,7 +25,7 @@ shop.
 
 ---------------------------
 
-# Completed Web Tickets
+# Completed Web Tickets + Suggestions
 ## Frontend Shop site
 - successfully used HTML code to program the shop homepage, along with the index and resolution tabs; currently 
 ready to deploy on Raspberry Pi in Scrum Board. Next step is to start creating items for purchase and add cart management features.
@@ -63,7 +63,20 @@ on Raspberry Pi in Scrum Board
 - [Runtime Link](http://104.63.255.27/secret)
 - [Link to Easter Egg Ticket](https://github.com/TMarwah/P4Tigers/projects/1#card-54290639)
 
+## Suggestions
+![image](https://user-images.githubusercontent.com/72889453/108459216-10720480-722b-11eb-96de-d7080b1d9290.png)
+- From last week, a notable suggestion was adding a search feature that would be able to filter through certain users and their emails
+- This is a rough idea of what we want our search bar to look like
+- At the moment we are still trying to look into the front end of implementing such a feature
+
 --------------------------------------
+# Mini Code Review
+![image](https://user-images.githubusercontent.com/72889453/108459692-03094a00-722c-11eb-9c7a-bd02bf6862c7.png)
+- This was an example of what we pulled from this week's tech talk
+- We saw how Trish modeled how her data was being displayed in her Pacman site, and decided to play around with it
+- Overall it made it so that we could smoothly display to the user all the other users logged in the database.
+
+---------------------------------------
 
 # [College Board Considerations](https://docs.google.com/document/d/1O279rqgBkT8BU5zq1z90Pj5j0YFc0xgz8ofzj0U-PlQ/edit)
 
