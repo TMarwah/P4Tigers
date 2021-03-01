@@ -1,3 +1,4 @@
+from flask import render_template
 import requests
 def amazon_api():
     url = "https://amazon-price.p.rapidapi.com/azapi-azSearch"
@@ -14,3 +15,6 @@ def amazon_api():
     print(response.text)
     return response.text
 
+def error(message, code=400):
+    """Render message as an apology to user when errors occur."""
+    return render_template("error.html", code=code, message=message)

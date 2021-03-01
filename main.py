@@ -9,7 +9,7 @@ from werkzeug.exceptions import default_exceptions, HTTPException, InternalServe
 from werkzeug.security import check_password_hash, generate_password_hash
 from werkzeug.urls import url_parse
 import sqlalchemy
-from custom import error
+from API import error
 import requests
 import os
 
@@ -88,6 +88,23 @@ def testimonial_route():
 def logout():
     logout_user()
     return redirect("/")
+
+@app.route('/customerservice', methods=['POST', 'GET'])
+def customer():
+    if request.method == "POST":
+        if request.form.get("response") == "1":
+            return render_template("contactnumber.html")
+        elif request.form.get("response") == "2":
+            return render_template("termsconditions.html")
+        elif request.form.get("response") == "3":
+            return render_template("termsconditions.html")
+        elif request.form.get("response") == "4":
+            return render_template("animation.html")
+        else:
+            return error("Please pick a number from 1-4.", 401)
+    return render_template("customerservice.html")
+
+
 
 @app.route('/secret')
 def secret_route():
