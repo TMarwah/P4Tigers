@@ -95,13 +95,13 @@ def customer():
         if request.form.get("response") == "1":
             return render_template("contactnumber.html")
         elif request.form.get("response") == "2":
-            return render_template("termsconditions.html")
+            return render_template("missingpackage.html")
         elif request.form.get("response") == "3":
             return render_template("termsconditions.html")
         elif request.form.get("response") == "4":
             return render_template("animation.html")
         else:
-            return error("Please pick a number from 1-4.", 401)
+            return error("Please pick an option from 1-4.", 401)
     return render_template("customerservice.html")
 
 
