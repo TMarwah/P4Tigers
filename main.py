@@ -13,7 +13,7 @@ from API import error
 import requests
 import os
 
-# create a Flask instance
+# creating a Flask instance
 basedir = os.path.abspath(os.path.dirname(__file__))
 app = Flask(__name__)
 login = LoginManager(app)
