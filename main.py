@@ -2,7 +2,7 @@ from flask import Flask, flash, jsonify, redirect, url_for, render_template, req
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.sql import text
 from flask_wtf import FlaskForm
-from wtforms import StringField, PasswordField, BooleanField, SubmitField
+from wtforms import StringField, PasswordField, BooleanField, SubmitField , IntegerField
 from wtforms.validators import DataRequired, Email, EqualTo
 from flask_login import LoginManager, UserMixin, login_required, login_user, logout_user
 from werkzeug.exceptions import default_exceptions, HTTPException, InternalServerError
@@ -39,6 +39,13 @@ class User(UserMixin, db.Model):
     def check_password(self, password):
         return check_password_hash(self.password_hash, password)
 
+class Item(UserMixin, db.Model):
+    ii = db.Column(db.Integer, primary_key=True)
+    item = db.Column(db.String(255), unique=False, nullable=False)
+    itemID = db.Column(db.Integer, unique=False, nullable=False)
+    price = db.Column(db.Integer, unique=False, nullable=False)
+    itemQuan = db.Column(db.Integer, unique=False, nullable=False)
+
 class RegisterForm(FlaskForm):
     username = StringField('Username', validators=[DataRequired()])
     password = PasswordField('Password', validators=[DataRequired()])
@@ -47,6 +54,14 @@ class RegisterForm(FlaskForm):
     lastname = StringField('Last Name', validators=[DataRequired()])
     email = StringField('Email', validators=[DataRequired(), Email()])
     submit = SubmitField('Register')
+
+class ItemForm(FlaskForm):
+    item = StringField('Item', validators=[DataRequired()])
+    itemID = IntegerField('Item ID', validators=[DataRequired()])
+    price = IntegerField('Item Price', validators=[DataRequired()])
+    itemQuan = IntegerField('Item Quantity', validators=[DataRequired()])
+    submit = SubmitField('Enter Item')
+
 
 class LoginForm(FlaskForm):
     username = StringField('Username', validators=[DataRequired()])
@@ -106,9 +121,16 @@ def customer():
 
 
 
-@app.route('/secret')
+@app.route('/secret' , methods=["GET", "POST"])
 def secret_route():
-    return render_template("secret.html")
+    itemform = ItemForm()
+    if itemform.validate_on_submit():
+        newItem = Item(item=itemform.item.data, itemID=itemform.itemID.data, price=itemform.price.data, itemQuan=itemform.itemQuan.data)
+        # Insert all the values into the database
+        db.session.add(newItem)
+        db.session.commit()
+        return redirect("/secret")
+    return render_template("secret.html" , form = itemform)
 # connects /hello path of server to render hello.html
 
 @app.route('/login', methods=['POST', 'GET'])
