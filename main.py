@@ -185,6 +185,11 @@ def newuser(newuser):
     return f"<h1>{newuser}</h1>"
 # Create a sign up page
 
+@app.route("/checkout")
+def checkout():
+    return render_template("checkout.html")
+
+
 if __name__ == "__main__":
     db.create_all()
     # runs the application on the repl development server
