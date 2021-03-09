@@ -59,6 +59,19 @@ on Raspberry Pi in Scrum Board
 - [link to Signup Ticket](https://github.com/TMarwah/P4Tigers/projects/1#card-53870090)
 -runtime: http://104.63.255.27/
 
+## Item Creation Console
+- Created an input terminal under the easter egg path that can allow people to add items and then view them on the corresponding shop site.
+- [file containing bootstrap and visual code](https://github.com/TMarwah/P4Tigers/blob/main/templates/secret.html)
+- User can enter various attributes such as item name, item ID, item quantity, and item cost.
+- [Link To Ticket](https://github.com/TMarwah/P4Tigers/projects/1#card-52341367)
+
+## Customer Service Feature
+- Created functioning customer sevice feature that prompts the user for a response and redirects them depending on what response they enter.
+- [Approute code](https://github.com/TMarwah/P4Tigers/blob/main/main.py#L107-L120)
+- [Funtion](https://github.com/TMarwah/P4Tigers/blob/main/API.py#L18-L20) that returns an error if the user didn't input a valid option
+- Customer can choose from reading terms and conditions, getting in contact with a representative, reporting a missing package, or seeing a tiger animation.
+- [Link To Ticket](https://github.com/TMarwah/P4Tigers/projects/1#card-56454095)
+
 ## EASTER EGG FOR WEEK OF JAN 29: 
 - [Runtime Link](http://104.63.255.27/secret)
 - [Link to Easter Egg Ticket](https://github.com/TMarwah/P4Tigers/projects/1#card-54290639)

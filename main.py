@@ -185,11 +185,6 @@ def newuser(newuser):
     return f"<h1>{newuser}</h1>"
 # Create a sign up page
 
-@app.route('/coupon')
-@login_required
-def coupon_route():
-    return render_template("coupon.html")
-
 if __name__ == "__main__":
     db.create_all()
     # runs the application on the repl development server
