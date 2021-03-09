@@ -98,6 +98,11 @@ def testimonial_route():
     return render_template("testmonial.html")
 # connects /hello path of server to render hello.html
 
+@app.route('/coupon')
+@login_required
+def coupon():
+    return render_template("coupon.html")
+
 @app.route('/logout')
 @login_required
 def logout():
