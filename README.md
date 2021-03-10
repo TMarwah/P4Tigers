@@ -78,6 +78,12 @@ on Raspberry Pi in Scrum Board
   and fill-in examples just in case user gets confused
 - [Link to Ticket](https://github.com/TMarwah/P4Tigers/projects/1#card-51100454)
 
+## Coupon Feature
+- Created a coupon feature that allows the user to browse through a list of coupons that have certain discounts on items 
+- The coupons are in the form of buttons that prompt the user with a copyable code when clicked 
+- [HTML code](https://github.com/TMarwah/P4Tigers/blob/main/templates/coupon.html); uses a class based button system that prompts the user with codes
+- [Link to Ticket](https://github.com/TMarwah/P4Tigers/projects/1#card-56564064)
+
 ## EASTER EGG FOR WEEK OF JAN 29: 
 - [Runtime Link](http://104.63.255.27/secret)
 - [Link to Easter Egg Ticket](https://github.com/TMarwah/P4Tigers/projects/1#card-54290639)
