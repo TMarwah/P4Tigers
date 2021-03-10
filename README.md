@@ -72,6 +72,12 @@ on Raspberry Pi in Scrum Board
 - Customer can choose from reading terms and conditions, getting in contact with a representative, reporting a missing package, or seeing a tiger animation.
 - [Link To Ticket](https://github.com/TMarwah/P4Tigers/projects/1#card-56454095)
 
+## Checkout
+-Created a functioning checkout layout used for the site in order to purchase products from the Shop (e-commerce API needed to fully function)
+- [HTML code](https://github.com/TMarwah/P4Tigers/blob/main/templates/checkout.html) for the layout; includes accepted cards, input boxes for card info
+  and fill-in examples just in case user gets confused
+- [Link to Ticket](https://github.com/TMarwah/P4Tigers/projects/1#card-51100454)
+
 ## EASTER EGG FOR WEEK OF JAN 29: 
 - [Runtime Link](http://104.63.255.27/secret)
 - [Link to Easter Egg Ticket](https://github.com/TMarwah/P4Tigers/projects/1#card-54290639)
