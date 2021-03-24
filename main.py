@@ -9,7 +9,6 @@ from werkzeug.exceptions import default_exceptions, HTTPException, InternalServe
 from werkzeug.security import check_password_hash, generate_password_hash
 from werkzeug.urls import url_parse
 import sqlalchemy
-from API import error
 import requests
 import os
 
@@ -72,12 +71,6 @@ class LoginForm(FlaskForm):
 def load_user(id):
     return User.query.get(int(id))
 
-@app.route('/api')
-def idk():
-    response = requests.get('http://aws.random.cat/meow')
-    image = response.json()['file']
-    return render_template("api.html", image=image)
-
 @app.route('/database')
 @login_required
 def index():
@@ -89,9 +82,9 @@ def index():
 def home_route():
     return render_template("home.html")
 
-@app.route('/index')
+@app.route('/blank')
 def index_route():
-    return render_template("index.html")
+    return render_template("blank.html")
 
 @app.route('/testimonial')
 def testimonial_route():
