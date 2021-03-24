@@ -91,33 +91,11 @@ def testimonial_route():
     return render_template("testmonial.html")
 # connects /hello path of server to render hello.html
 
-@app.route('/coupon')
-@login_required
-def coupon():
-    return render_template("coupon.html")
-
 @app.route('/logout')
 @login_required
 def logout():
     logout_user()
     return redirect("/")
-
-@app.route('/customerservice', methods=['POST', 'GET'])
-def customer():
-    if request.method == "POST":
-        if request.form.get("response") == "1":
-            return render_template("contactnumber.html")
-        elif request.form.get("response") == "2":
-            return render_template("missingpackage.html")
-        elif request.form.get("response") == "3":
-            return render_template("termsconditions.html")
-        elif request.form.get("response") == "4":
-            return render_template("animation.html")
-        else:
-            return error("Please pick an option from 1-4.", 401)
-    return render_template("customerservice.html")
-
-
 
 @app.route('/secret' , methods=["GET", "POST"])
 def secret_route():
