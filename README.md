@@ -53,7 +53,7 @@ on Raspberry Pi in Scrum Board
 - table takes values from database in order to be displayed.
 - [Link to Ticket](https://github.com/TMarwah/P4Tigers/projects/1#card-51100463)
 
-## [Login](https://github.com/TMarwah/P4Tigers/blob/main/main.py#L141), [Logout](https://github.com/TMarwah/P4Tigers/blob/main/main.py#L106), and [Signup](https://github.com/TMarwah/P4Tigers/blob/main/main.py#L42)
+## [Login](https://github.com/TMarwah/P4Tigers/blob/main/main.py#L141), [Logout](https://github.com/TMarwah/P4Tigers/blob/main/main.py#L106), and [Signup](https://github.com/TMarwah/P4Tigers/blob/main/main.py#L164)
 - all successfully work with eachother in order to create a login page that aids the user
 - [Link to Login and Logout Ticket](https://github.com/TMarwah/P4Tigers/projects/1#card-51100465)
 - [link to Signup Ticket](https://github.com/TMarwah/P4Tigers/projects/1#card-53870090)
